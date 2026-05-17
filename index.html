@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>省份真实地图游戏</title>
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="title-group">
+          <p class="eyebrow">地图探索</p>
+          <h1>省份真实地图</h1>
+        </div>
+        <div class="stats" aria-label="游戏进度">
+          <div class="stat">
+            <span id="foundCount">0/34</span>
+            <small>已发现</small>
+          </div>
+          <div class="stat">
+            <span id="completionRate">0%</span>
+            <small>完成度</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="game-layout">
+        <section class="map-panel" aria-label="中国省级行政区块地图">
+          <div id="map" class="map-wrap"></div>
+        </section>
+
+        <aside class="side-panel">
+          <section class="readout" aria-live="polite">
+            <p class="panel-label">当前</p>
+            <h2 id="provinceName">尚未选择</h2>
+            <dl class="details">
+              <div>
+                <dt>类型</dt>
+                <dd id="provinceType">-</dd>
+              </div>
+              <div>
+                <dt>区域</dt>
+                <dd id="provinceZone">-</dd>
+              </div>
+              <div>
+                <dt>行政中心</dt>
+                <dd id="provinceCapital">-</dd>
+              </div>
+            </dl>
+          </section>
+
+          <section class="challenge-box">
+            <p class="panel-label">随机挑战</p>
+            <div id="challengeTarget" class="target">未开始</div>
+            <p id="challengeFeedback" class="feedback"> </p>
+          </section>
+
+          <div class="controls">
+            <button id="challengeButton" type="button">随机挑战</button>
+            <button id="resetButton" type="button" class="secondary">重置</button>
+          </div>
+
+          <section class="recent-box">
+            <p class="panel-label">最近点击</p>
+            <ol id="recentList" class="recent-list" aria-live="polite"></ol>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="data/china-provinces.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
