@@ -22,5 +22,6 @@
 
 ## 产品文档
 
-- [基础设计文档](docs/design.md)
-- [趣味化与增长迭代文档](docs/fun-growth-iteration.md)
+- [文档中心](docs/index.html)
+- [基础设计文档](docs/design.html)
+- [趣味化与增长迭代文档](docs/fun-growth-iteration.html)
