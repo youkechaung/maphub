@@ -19,3 +19,8 @@
 
 - 地图数据：DataV.GeoAtlas 全国省级边界 `100000_full.json`
 - 地图库：Leaflet 1.9.4，本地文件位于 `vendor/leaflet`
+
+## 产品文档
+
+- [基础设计文档](docs/design.md)
+- [趣味化与增长迭代文档](docs/fun-growth-iteration.md)
